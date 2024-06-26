@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+<h1 align="center">🖼️ Image Search App 🖼️</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">🔍 Project Name: Image Finder 🔍</h3>
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+<h3 align="justify" width="80%">
+Image Finder is a responsive web application built with React.js and styled using Material-UI (MUI). It allows users to search for images using the Unsplash API. The application includes pagination for navigating through search results and handles errors gracefully. It features reusable components and follows production-level coding practices.
+</h3>
 
-### `npm start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend Deployed URL 👉 [Link to deployed app](#)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `npm test`
+<h2 align="left">
+<img src="https://art.pixilart.com/486745d4bb1ef18.gif"  width="20" height="20" align="center">
+ Languages and Tools Used
+<img src="https://art.pixilart.com/486745d4bb1ef18.gif"  width="20" height="20" align="center">
+</h2>
+<div align="center">
+ 
+ <div align="center"><h3 align="center">Frontend</h3>
+<img src="https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" align="center" alt="reactjs" />
+<img src="https://img.shields.io/badge/materialui-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white" align="center" alt="materialui" />
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div align="center"><h3 align="center">Tools</h3> 
+<img src="https://img.shields.io/badge/axios-%23232F3E.svg?style=for-the-badge&logo=axios&logoColor=white" align="center" alt="axios"/>
+<img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"  align="center" alt="git"/>
+<img src = "https://img.shields.io/badge/npm-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" align="center" alt="npm">
+</div>
+</div>
 
-### `npm run build`
+<div align="center"><h3 align="center">Deployed On:</h3>
+  <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"  alt="netlify"/>
+</div>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Home Screen**: Displays a search bar and initial set of images.
+- **Search Functionality**: Fetches images from Unsplash API based on user input.
+- **Pagination**: Uses Material-UI Pagination component for easy navigation through search results.
+- **Responsive Design**: Supports mobile, tablet, and desktop views with standard breakpoints.
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!--- # Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Home Page
+![Home Page](#)
+![Initial Images](#)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Search Results
+![Search Results](#)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Image Details Page
+![Image Details Page](#)--->
 
-## Learn More
+<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/image-finder.git
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the app:
+   ```sh
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Code Splitting
+<br/><br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Error Handling
 
-### Analyzing the Bundle Size
+The application handles errors gracefully, displaying appropriate messages to users in case of failed API requests or other errors.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br/><br/>
 
-### Making a Progressive Web App
+# Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application is deployed on Netlify for easy access and sharing.
 
-### Advanced Configuration
+<br/><br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Contributing
 
-### Deployment
+Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or fork the repository and submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br/>
 
-### `npm run build` fails to minify
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you found this project interesting and helpful!
+
+<h1 align="center">✨ Thank You! ✨</h1>
+
