@@ -10,7 +10,7 @@ Image Finder is a responsive web application built with React.js and styled usin
 
 <br/>
 
-### Frontend Deployed URL 👉 [Link to deployed app](#)
+### Frontend Deployed URL 👉 [Link to deployed app](https://image-search-api-delta.vercel.app/)
 
 <br/>
 
