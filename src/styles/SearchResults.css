@@ -129,3 +129,31 @@
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.MuiPagination-root {
+  margin: 20px 0;
+}
+
+.MuiPagination-ul {
+  justify-content: center;
+}
+
+.MuiPaginationItem-root {
+  color: #3f51b5;
+}
+
+.MuiPaginationItem-root.Mui-selected {
+  background-color: #3f51b5; 
+  color: #fff;
+}
+
+.MuiPaginationItem-root:hover {
+  background-color: rgba(63, 81, 181, 0.1);
+}

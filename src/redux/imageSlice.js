@@ -7,7 +7,8 @@ const initialState = {
   error: null,
   selectedImage: null,
   imageStatus: "idle",
-  imageError: null
+  imageError: null,
+  totalPages: 0, 
 };
 
 const imagesSlice = createSlice({
@@ -18,7 +19,7 @@ const imagesSlice = createSlice({
       state.selectedImage = null;
       state.imageStatus = "idle";
       state.imageError = null;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -27,7 +28,8 @@ const imagesSlice = createSlice({
       })
       .addCase(fetchImages.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.images = action.payload;
+        state.images = action.payload.results;
+        state.totalPages = action.payload.totalPages;
       })
       .addCase(fetchImages.rejected, (state, action) => {
         state.status = "failed";
@@ -44,7 +46,7 @@ const imagesSlice = createSlice({
         state.imageStatus = "failed";
         state.imageError = action.error.message;
       });
-  }
+  },
 });
 
 export const { clearSelectedImage } = imagesSlice.actions;

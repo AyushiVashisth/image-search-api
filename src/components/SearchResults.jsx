@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import { FaHandPointLeft } from "react-icons/fa";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import Pagination from '@mui/material/Pagination';
 import "../styles/SearchResults.css";
 import { fetchImages } from "../redux/api";
 
@@ -11,14 +12,16 @@ const SearchResults = () => {
   const { query } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const { images, status, error } = useSelector((state) => state.images);
+  
+  const { images, status, error, totalPages } = useSelector((state) => state.images);
+  const [page, setPage] = useState(1);
+  const resultsPerPage = 10;
 
   useEffect(() => {
     if (query) {
-      dispatch(fetchImages(query));
+      dispatch(fetchImages({ query, page, resultsPerPage }));
     }
-  }, [dispatch, query]);
+  }, [dispatch, query, page]);
 
   useEffect(() => {
     if (error) {
@@ -32,6 +35,10 @@ const SearchResults = () => {
 
   const handleImageClick = (imageId) => {
     navigate(`/details/${imageId}`);
+  };
+
+  const handleChangePage = (event, value) => {
+    setPage(value);
   };
 
   if (status === "idle" || status === "loading") {
@@ -95,6 +102,11 @@ const SearchResults = () => {
           </div>
         ))}
       </div>
+      <Pagination 
+        count={totalPages} 
+        page={page} 
+        onChange={handleChangePage} 
+      />
       <ToastContainer />
     </div>
   );
